@@ -102,8 +102,8 @@ body {
 .section.home {
     text-align: center;
     color: #fff;
-    padding: 260px 50px;
-    background: linear-gradient(to bottom, rgba(10, 41, 107, 0.493), rgba(0, 0, 0, 0.8)), url('lu.jpg') center/cover no-repeat;
+    padding: 200px 100px;
+    background: url('van.gif') center/cover no-repeat ;
 }
 
 .section.home h2 {
@@ -111,6 +111,7 @@ body {
     color: #ffffff;
     font-weight: bold;
     margin-bottom: 10px;
+    text-shadow: 0 0 5px #ffffffbb, 0 0 10px #ffffffbb, 0 0 15px #ffffffbb, 0 0 20px #ffffffbb;
 }
 
 .section.home p {
@@ -118,6 +119,7 @@ body {
     color: #f3f3f3;
     max-width: 800px;
     margin: 20px auto 0;
+    text-shadow: 0 0 5px #ffffff94, 0 0 10px #ffffff94, 0 0 15px #ffffff94, 0 0 20px #ffffff94;
 }
 
 /* Responsivo para menu */

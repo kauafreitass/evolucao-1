@@ -9,22 +9,10 @@
 <body>
 
 <section class="section home" id="home">
-    <header class="header">
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="indexhtml.php">1</a></li>
-                <li><a href="index.php">2</a></li>
-                <li><a href="contato.php">3</a></li>
-            </ul>
-            <span class="nav-toggle">&#9776;</span>
-        </nav>
-    </header>
-
    
-    
         <h2>Projeto evolução</h2>
         <h2>HUMANAS</h2>
-        <p>"A inspiração é como o vento: invisível, mas sempre em movimento."</p>
+        <p>"Até os momentos de silêncio carregam a força de uma obra inacabada."</p>
     </section>
 
 
