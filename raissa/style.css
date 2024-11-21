@@ -1,0 +1,186 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    line-height: 1.8;
+    color: #4c3b4d; /* Tom lilás para o texto */
+    background: linear-gradient(to bottom right, #f2e8f3, #dcd6f7); /* Gradiente lilás */
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Garante o alinhamento vertical de header, conteúdo e footer */
+    min-height: 100vh; /* Tela cheia */
+}
+
+/* Header com decoração de flores */
+.header {
+    background: linear-gradient(to right, #c7b8de, #e7d9f7); /* Gradiente lilás mais claro */
+    color: #4c3b4d;
+    padding: 40px 25px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative; /* Necessário para posicionar os elementos decorativos */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Título do header */
+.header h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px #ffffff;
+    margin: 0;
+}
+
+/* Flores decorativas no canto superior esquerdo e inferior direito */
+.header::before,
+.header::after {
+    content: "";
+    position: absolute;
+    background: url('https://www.svgrepo.com/show/488998/flower-decoration.svg') no-repeat center;
+    background-size: 100px; /* Ajusta o tamanho da flor */
+    width: 100px;
+    height: 100px;
+    opacity: 0.8; /* Deixa as flores delicadas */
+}
+
+/* Flor no canto superior esquerdo */
+.header::before {
+    top: -10px;
+    left: -10px;
+    transform: rotate(-15deg); /* Gira a flor para um visual mais dinâmico */
+}
+
+/* Flor no canto inferior direito */
+.header::after {
+    bottom: -10px;
+    right: -10px;
+    transform: rotate(15deg); /* Gira a flor para o lado oposto */
+}
+
+/* Container principal */
+.container {
+    max-width: 90%; /* Aumenta a largura para ocupar 90% da tela */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 25px;
+    background: #f6f0fa; /* Fundo lilás claro */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2d8ee; /* Bordas lilás */
+    text-align: center; /* Centraliza texto e imagens */
+    flex: 1; /* Faz o conteúdo expandir entre header e footer */
+}
+
+/* Seção de projetos */
+.projeto {
+    margin-bottom: 30px;
+}
+
+.projeto h2 {
+    color: #6a557a; /* Tom lilás mais escuro */
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.projeto p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #4c3b4d;
+}
+
+/* Imagem do projeto */
+.projeto img {
+    width: 80%; /* Reduz o tamanho das imagens */
+    height: auto;
+    border-radius: 15px; /* Arredondar bordas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    border: 1px solid #e2d8ee; /* Bordas suaves em lilás */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Efeito ao passar o mouse */
+.projeto img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de reflexão */
+.reflexao h2 {
+    color: #6a557a;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.reflexao p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #4c3b4d;
+}
+
+/* Rodapé */
+.footer {
+    background: linear-gradient(to right, #e7d9f7, #c7b8de); /* Gradiente lilás inverso */
+    color: #4c3b4d;
+    padding: 20px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Espaço acima do footer */
+    width: 100%; /* Preenche toda a largura da tela */
+    border-radius: 0; /* Remove o arredondamento */
+    border-top: 1px solid #e2d8ee; /* Linha no topo */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #6a557a;
+}
+
+.footer a {
+    color: #4c3b4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #6a557a;
+    text-decoration: underline;
+}
+
+/* Estilização do Navbar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    background: linear-gradient(to right, #dcd6f7, #f2e8f3); /* Gradiente lilás suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 15px;
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaço abaixo do navbar */
+    border: 1px solid #e2d8ee; /* Bordas suaves */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #4c3b4d; /* Tom lilás escuro */
+    font-family: "Georgia", serif;
+    font-size: 1.1rem; /* Aumenta levemente o texto */
+    margin: 0 15px; /* Espaçamento entre os links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.navbar a:hover {
+    color: #6a557a; /* Lilás mais escuro ao passar o mouse */
+    transform: scale(1.1); /* Leve aumento no tamanho */
+}
+
+.navbar a:active {
+    color: #8e79a8; /* Lilás mais profundo ao clicar */
+}
