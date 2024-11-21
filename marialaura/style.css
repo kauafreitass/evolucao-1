@@ -1,0 +1,228 @@
+/* Cabeçalho */
+.header {
+    padding: 20px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: #f1f1f100;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.nav-menu li a {
+    color: #fff9f9;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #05632ccb;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.caption {
+    max-width: 50%;
+    text-align: left;
+}
+
+.caption h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.caption p {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .caption {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* Seção principal (Home) */
+.section.home {
+    text-align: center;
+    color: #fff;
+    padding: 150px 50px;
+    background: url('video_files/') center/cover no-repeat ;
+}
+
+.section.home h2 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section.home p {
+    font-size: 22px;
+    color: #f3f3f3;
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+
+/* Responsivo para menu */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 15px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+/* Estilização dos títulos */
+h2, h3 {
+    font-family: 'Playfair Display', serif; /* Fonte elegante e clássica */
+    color: #A9C9E2; /* Azul pastel suave */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.8em; /* Maior destaque para o título principal */
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombras para destacar o título */
+}
+
+h3 {
+    font-size: 2.2em; 
+    font-weight: 500;
+}
+
+/* Estilo principal do conteúdo */
+main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombras para dar profundidade */
+    border: 2px solid #A9C9E2; /* Borda fina azul pastel */
+}
+
+/* Imagem de fundo suave e bordas arredondadas nas seções */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #FAF4E6;
+    background-image: url('../assets/img/fundo-vintage.jpg'); /* Imagem de fundo vintage */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Sombras internas para um toque sutil */
+}
+
+section p {
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+/* Links internos dentro das seções */
+a {
+    color: #A9C9E2; /* Azul pastel suave */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D1B9C5; /* Cor de hover mais suave */
+    text-decoration: underline;
+}
+
+/* Estilização das imagens */
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombras para dar profundidade */
+    border: 3px solid #A9C9E2; /* Borda azul pastel para destacar as imagens */
+}
+
+/* Rodapé */
+footer {
+    background-color: #A9C9E2; /* Azul pastel suave */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombras para dar um toque de profundidade */
+}
+
+/* Animação para transições suaves */
+a, .navbar a {
+    transition: all 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar a {
+        margin: 0 15px;
+        font-size: 1em;
+    }
+    main {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 2.2em;
+    }
+    h3 {
+        font-size: 1.8em;
+    }
+}
