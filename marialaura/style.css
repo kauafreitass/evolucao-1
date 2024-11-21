@@ -1,11 +1,11 @@
 /* Cabeçalho */
 .header {
     padding: 20px;
- 
+
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
     background-color: #f1f1f100;
 }
 
@@ -36,6 +36,7 @@
     cursor: pointer;
     color: #000;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -83,7 +84,8 @@
     text-align: center;
     color: #fff;
     padding: 150px 50px;
-    background: url('video_files/') center/cover no-repeat ;
+    background: url('img/giif.gif.crdownload') center/cover no-repeat;
+    text-shadow: 0 0 5px #ffffff94,  0 0 10px #ffffff94, 0 0 15px #ffffff94, 0 0 20px #ffffff94;
 }
 
 .section.home h2 {
@@ -91,6 +93,7 @@
     color: #ffffff;
     font-weight: bold;
     margin-bottom: 10px;
+    text-shadow: 0 0 5px #ffffff94, 0 0 10px #ffffff94, 0 0 15px #ffffff94, 0 0 20px #ffffff94;
 }
 
 .section.home p {
@@ -120,23 +123,29 @@
         display: block;
     }
 }
+
 /* Estilização dos títulos */
-h2, h3 {
-    font-family: 'Playfair Display', serif; /* Fonte elegante e clássica */
-    color: #A9C9E2; /* Azul pastel suave */
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    /* Fonte elegante e clássica */
+    color: #A9C9E2;
+    /* Azul pastel suave */
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 2.8em; /* Maior destaque para o título principal */
+    font-size: 2.8em;
+    /* Maior destaque para o título principal */
     text-align: center;
     letter-spacing: 1px;
     font-weight: 600;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombras para destacar o título */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    /* Sombras para destacar o título */
 }
 
 h3 {
-    font-size: 2.2em; 
+    font-size: 2.2em;
     font-weight: 500;
 }
 
@@ -147,8 +156,10 @@ main {
     margin: 40px auto;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombras para dar profundidade */
-    border: 2px solid #A9C9E2; /* Borda fina azul pastel */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Sombras para dar profundidade */
+    border: 2px solid #A9C9E2;
+    /* Borda fina azul pastel */
 }
 
 /* Imagem de fundo suave e bordas arredondadas nas seções */
@@ -156,12 +167,14 @@ section {
     margin-bottom: 40px;
     padding: 20px;
     background-color: #FAF4E6;
-    background-image: url('../assets/img/fundo-vintage.jpg'); /* Imagem de fundo vintage */
+    background-image: url('../assets/img/fundo-vintage.jpg');
+    /* Imagem de fundo vintage */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     color: #333;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Sombras internas para um toque sutil */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombras internas para um toque sutil */
 }
 
 section p {
@@ -171,13 +184,15 @@ section p {
 
 /* Links internos dentro das seções */
 a {
-    color: #A9C9E2; /* Azul pastel suave */
+    color: #A9C9E2;
+    /* Azul pastel suave */
     font-weight: bold;
     text-decoration: none;
 }
 
 a:hover {
-    color: #D1B9C5; /* Cor de hover mais suave */
+    color: #D1B9C5;
+    /* Cor de hover mais suave */
     text-decoration: underline;
 }
 
@@ -187,13 +202,16 @@ img {
     border-radius: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombras para dar profundidade */
-    border: 3px solid #A9C9E2; /* Borda azul pastel para destacar as imagens */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombras para dar profundidade */
+    border: 3px solid #A9C9E2;
+    /* Borda azul pastel para destacar as imagens */
 }
 
 /* Rodapé */
 footer {
-    background-color: #A9C9E2; /* Azul pastel suave */
+    background-color: #A9C9E2;
+    /* Azul pastel suave */
     color: white;
     text-align: center;
     padding: 30px 0;
@@ -202,11 +220,13 @@ footer {
     bottom: 0;
     font-size: 1.1em;
     text-transform: uppercase;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombras para dar um toque de profundidade */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombras para dar um toque de profundidade */
 }
 
 /* Animação para transições suaves */
-a, .navbar a {
+a,
+.navbar a {
     transition: all 0.3s ease;
 }
 
@@ -216,12 +236,15 @@ a, .navbar a {
         margin: 0 15px;
         font-size: 1em;
     }
+
     main {
         padding: 20px;
     }
+
     h2 {
         font-size: 2.2em;
     }
+
     h3 {
         font-size: 1.8em;
     }
