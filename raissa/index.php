@@ -34,8 +34,7 @@
             <div class="container-item">
                 <h2>Projeto Atual</h2>
                 <p>
-                    O projeto atual é um sistema de gerenciamento de tarefas, que utiliza HTML, CSS, JavaScript e integração com APIs externas.
-                    Ele tem como objetivo ajudar equipes a organizar seu trabalho de maneira eficiente.
+              
                 </p>
                 <img src="img/projeto-atual.png" alt="Imagem do projeto atual">
             </div>
