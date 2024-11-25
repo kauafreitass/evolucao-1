@@ -1,12 +1,34 @@
+h2 {
+    font-size: 36px;
+    color: #000;
+    /* Preto para destaque */
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.796);
+}
+
 /* Cabeçalho */
 .header {
     padding: 20px;
- 
+
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    background-color: #f1f1f100;
+
+    background-color: #f1f1f196;
 }
 
 .nav-menu {
@@ -17,7 +39,7 @@
 }
 
 .nav-menu li a {
-    color: #fff9f9;
+    color: #ffffff;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 700;
@@ -36,6 +58,7 @@
     cursor: pointer;
     color: #000;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -59,11 +82,11 @@
 
 .caption h2 {
     margin-bottom: 10px;
-    color: #333;
+    color: #83cac0;
 }
 
 .caption p {
-    color: #555;
+    color: #096256;
 }
 
 @media (max-width: 768px) {
@@ -82,8 +105,8 @@
 .section.home {
     text-align: center;
     color: #fff;
-    padding: 150px 50px;
-    background: url('video_files/') center/cover no-repeat ;
+    padding: 200px 100px;
+    background: url('img/praia2.jpg') center/cover no-repeat;
 }
 
 .section.home h2 {
@@ -91,6 +114,7 @@
     color: #ffffff;
     font-weight: bold;
     margin-bottom: 10px;
+    text-shadow: 0 0 5px #ffffffbb, 0 0 10px #ffffffbb, 0 0 15px #ffffffbb, 0 0 20px #ffffffbb;
 }
 
 .section.home p {
@@ -120,109 +144,164 @@
         display: block;
     }
 }
-/* Estilização dos títulos */
-h2, h3 {
-    font-family: 'Playfair Display', serif; /* Fonte elegante e clássica */
-    color: #A9C9E2; /* Azul pastel suave */
-    margin-bottom: 20px;
-}
 
-h2 {
-    font-size: 2.8em; /* Maior destaque para o título principal */
+.footer {
+    background-color: #468a81b9;
+    color: #fff;
     text-align: center;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombras para destacar o título */
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-h3 {
-    font-size: 2.2em; 
-    font-weight: 500;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Estilo principal do conteúdo */
-main {
-    padding: 40px;
-    max-width: 1000px;
-    margin: 40px auto;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombras para dar profundidade */
-    border: 2px solid #A9C9E2; /* Borda fina azul pastel */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-/* Imagem de fundo suave e bordas arredondadas nas seções */
-section {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #FAF4E6;
-    background-image: url('../assets/img/fundo-vintage.jpg'); /* Imagem de fundo vintage */
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    color: #333;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Sombras internas para um toque sutil */
-}
-
-section p {
-    font-size: 1.3em;
-    line-height: 1.8;
-}
-
-/* Links internos dentro das seções */
-a {
-    color: #A9C9E2; /* Azul pastel suave */
-    font-weight: bold;
+.footer-links a {
+    color: #fff;
     text-decoration: none;
 }
 
-a:hover {
-    color: #D1B9C5; /* Cor de hover mais suave */
+.footer-links a:hover {
     text-decoration: underline;
 }
 
-/* Estilização das imagens */
-img {
-    max-width: 100%;
-    border-radius: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombras para dar profundidade */
-    border: 3px solid #A9C9E2; /* Borda azul pastel para destacar as imagens */
-}
+.container1 {
 
-/* Rodapé */
-footer {
-    background-color: #A9C9E2; /* Azul pastel suave */
-    color: white;
+    background-color: #94d9d080;
+    /* Cor de fundo roxa vintage */
+    color: rgb(4, 63, 62);
+    /* Texto branco */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    padding: 50px;
+    /* Espaçamento interno */
+    width: 1000px;
+    /* Largura fixa */
+    margin: 50px auto;
+    /* Centraliza horizontalmente e cria um espaço superior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza o conteúdo interno horizontalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo interno verticalmente */
+    box-shadow: 0 8px 16px rgba(5, 98, 96, 0.421);
+    /* Sombra para destaque */
     text-align: center;
-    padding: 30px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombras para dar um toque de profundidade */
+    /* Centraliza o texto dentro do bloco */
+    font-family: "Georgia", serif;
+    /* Estilo de fonte */
+    line-height: 1.8;
+    /* Espaçamento entre linhas */
 }
 
-/* Animação para transições suaves */
-a, .navbar a {
-    transition: all 0.3s ease;
+.caption1 h2 {
+    margin-bottom: 10px;
+    color: #83cac0;
 }
 
-/* Responsividade */
+.evolution-container {
+    margin: 50px auto;
+    padding: 30px 20px;
+    max-width: 800px;
+    background-color: #ffffff;
+    /* Fundo branco */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    position: relative;
+    /* Necessário para a mini imagem */
+}
+
+.mini-image {
+    width: 100px;
+    /* Tamanho pequeno para a imagem */
+    height: auto;
+    /* Permite que a altura se ajuste proporcionalmente */
+    position: absolute;
+    top: -50px;
+    /* Move a imagem para cima do container */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.evolution-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 60px;
+    /* Espaço abaixo da imagem */
+    color: #333;
+}
+
+.evolution-container p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.evolution-container p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para telas menores */
 @media (max-width: 768px) {
-    .navbar a {
-        margin: 0 15px;
-        font-size: 1em;
+    .evolution-container {
+        padding: 20px 15px;
+        margin: 30px auto;
     }
-    main {
-        padding: 20px;
+
+    .mini-image {
+        width: 80px;
+        /* Reduz a largura da imagem */
+        top: -40px;
+        /* Ajusta a posição da imagem */
     }
-    h2 {
-        font-size: 2.2em;
+
+    .evolution-container h2 {
+        font-size: 20px;
     }
-    h3 {
-        font-size: 1.8em;
+
+    .evolution-container p {
+        font-size: 14px;
+        /* Fonte menor para textos */
+        line-height: 1.6;
+        /* Ajusta o espaçamento */
+    }
+}
+
+/* Estilos para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    .evolution-container {
+        padding: 15px 10px;
+    }
+
+    .mini-image {
+        width: 60px;
+        /* Reduz ainda mais o tamanho da imagem */
+        top: -30px;
+    }
+
+    .evolution-container h2 {
+        font-size: 18px;
+    }
+
+    .evolution-container p {
+        font-size: 12px;
+        /* Fonte menor para telas muito pequenas */
     }
 }
