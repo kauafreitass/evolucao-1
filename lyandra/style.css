@@ -21,11 +21,9 @@ body {
 /* Cabeçalho */
 .header {
     padding: 20px;
- 
     display: flex;
     justify-content: center;
     align-items: center;
-   
     background-color: #f1f1f100;
 }
 
@@ -103,7 +101,7 @@ body {
     text-align: center;
     color: #fff;
     padding: 200px 100px;
-    background: url('van.gif') center/cover no-repeat ;
+    background: url('noite.png') center/cover no-repeat ;
 }
 
 .section.home h2 {
@@ -142,3 +140,4 @@ body {
         display: block;
     }
 }
+
