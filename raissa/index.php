@@ -10,9 +10,9 @@
     <header class="header">
         <h1>Raissa</h1>
         <nav class="navbar">
-            <a href="../index.php">Página Principal</a>
-            <a href="../evolucao.php">Evolução</a>
-            <a href="membro1.php">Membro 1</a>
+            <a href="index.php">Página Principal</a>
+            <a href="evolucao.html">Evolução</a>
+          
         </nav>
     </header>
 
@@ -22,8 +22,9 @@
             <div class="container-item">
                 <h2>Primeiro Projeto</h2>
                 <p>
-                    O primeiro projeto desenvolvido foi um site simples, focado em HTML e CSS, criado para apresentar um portfólio básico.
-                    O principal desafio foi organizar o conteúdo de forma coesa e estilizar adequadamente os elementos.
+                Este código é um exemplo de página web desenvolvida em HTML, com o objetivo de apresentar um site temático sobre Direito.
+                 Ele está dividido em diferentes seções, cada uma com uma função específica para organizar e exibir o conteúdo, 
+                 proporcionando uma experiência visual e funcional para os visitantes.
                 </p>
                 <img src="img/projeto anterior.png" alt="Imagem do primeiro projeto">
             </div>
@@ -34,9 +35,11 @@
             <div class="container-item">
                 <h2>Projeto Atual</h2>
                 <p>
-              
+                Este código HTML representa uma página web dedicada à atriz e cantora Zendaya. Ele está bem estruturado,
+                 dividido em seções que destacam diferentes aspectos de sua vida e carreira, com uma combinação de texto, imagens, links e vídeos. 
                 </p>
-                <img src="img/projeto-atual.png" alt="Imagem do projeto atual">
+
+                <img src="img/projeto atual.PNG" alt="Imagem do projeto atual">
             </div>
         </section>
 
@@ -52,18 +55,7 @@
             </div>
         </section>
 
-        <!-- Evolução Pessoal -->
-        <section class="evolucao">
-            <div class="container-item">
-                <h2>Evolução Pessoal</h2>
-                <p>
-                    Durante esses projetos, foi possível perceber um grande progresso técnico, principalmente na organização do código
-                    e na utilização de ferramentas mais avançadas. Além disso, a experiência ajudou no desenvolvimento de habilidades de
-                    resolução de problemas e trabalho em equipe.
-                </p>
-            </div>
-        </section>
-    </div>
+
 
     <footer class="footer">
         <p>&copy; 2024 Equipe de Projetos | <a href="index.html">Voltar à Página Principal</a></p>

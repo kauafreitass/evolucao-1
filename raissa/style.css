@@ -155,13 +155,13 @@ body {
     text-decoration: underline;
 }
 
-/* Estilização do Navbar */
 .navbar {
     display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Distribui os botões com espaço entre eles */
+    align-items: center; /* Centraliza os itens verticalmente */
     background: linear-gradient(to right, #dcd6f7, #f2e8f3); /* Gradiente lilás suave */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    padding: 15px;
+    padding: 15px 30px; /* Ajusta o espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
     margin-bottom: 20px; /* Espaço abaixo do navbar */
     border: 1px solid #e2d8ee; /* Bordas suaves */
@@ -172,15 +172,43 @@ body {
     color: #4c3b4d; /* Tom lilás escuro */
     font-family: "Georgia", serif;
     font-size: 1.1rem; /* Aumenta levemente o texto */
-    margin: 0 15px; /* Espaçamento entre os links */
-    transition: color 0.3s ease, transform 0.3s ease; /* Efeito ao passar o mouse */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    margin: 0 10px; /* Espaçamento entre os botões */
+    background: #f6f0fa; /* Fundo lilás claro */
+    border: 1px solid #e2d8ee; /* Bordas suaves */
+    border-radius: 5px; /* Arredondamento dos botões */
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* Efeito ao passar o mouse */
 }
 
 .navbar a:hover {
     color: #6a557a; /* Lilás mais escuro ao passar o mouse */
+    background-color: #e7d9f7; /* Fundo muda ao passar o mouse */
     transform: scale(1.1); /* Leve aumento no tamanho */
 }
 
 .navbar a:active {
     color: #8e79a8; /* Lilás mais profundo ao clicar */
+    transform: scale(0.95); /* Leve redução ao clicar */
+}
+
+.container-item2 {
+    max-width: 80%; /* Limita a largura para melhor legibilidade */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 30px; /* Espaçamento interno */
+    background: linear-gradient(to bottom right, #f6f0fa, #e7d9f7); /* Fundo com gradiente suave */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para destacar o bloco */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+    border: 1px solid #e2d8ee; /* Bordas suaves */
+    color: #4c3b4d; /* Cor do texto */
+    font-family: "Georgia", serif;
+    line-height: 1.8; /* Melhora a legibilidade */
+    transform: translateY(10px); /* Suave elevação visual */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse */
+.container-item2:hover {
+    transform: translateY(0); /* Remove o deslocamento */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
 }
