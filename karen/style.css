@@ -148,8 +148,7 @@ body {
 .back-button:active {
     transform: translateY(0); /* Retorna a posição original ao clicar */
     background-color:  #89c7c2; /* Tom dourado mais escuro durante o clique */
-}
-
+} 
 
 /* Responsivo para menu */
 @media (max-width: 768px) {
