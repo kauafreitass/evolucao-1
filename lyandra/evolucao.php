@@ -14,7 +14,7 @@
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background-color: #05632ccb;
+        background-color: #9fb6ffcb;
         /* Cor principal do seu site */
         color: white;
         border: none;
@@ -39,7 +39,7 @@
     }
 
     .scroll-top:hover {
-        background-color: #05632c;
+        background-color: #9fb6f0;
         /* Cor ligeiramente mais escura para o hover */
     }
 
@@ -47,7 +47,7 @@
     .nav-toggle {
         display: none;
         /* Esconde o botão no desktop */
-        background-color: #05632ccb;
+        background-color: #9fb6ffcb;
         color: white;
         border: none;
         padding: 10px 15px;
@@ -75,7 +75,8 @@
     }
 
     .nav-menu a:hover {
-        color: #05632ccb;
+        color: #9fb6ffcb;
+        text-shadow: 0 0 5px #ffffff94, 0 0 10px #ffffff94, 0 0 15px #ffffff94, 0 0 20px #ffffff94;
     }
 
     /* Estilos para dispositivos móveis */
@@ -119,10 +120,12 @@
 <body>
 
     <section class="section home" id="home">
+    <ul class="nav-menu">
+            <li><a href="../index.php">•Voltar para pagina incial</a></li>
+        </ul>
         <h2>Projeto evolução</h2>
         <h2>☸ HUMANAS ☸</h2>
         <p>"Até os momentos de silêncio carregam a força de uma obra inacabada."</p>
-        <li><a href="../index.php" class="brilho">Voltar para página inicial</a></li>
     </section>
 
 
