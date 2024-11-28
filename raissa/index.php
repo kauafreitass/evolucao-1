@@ -183,6 +183,12 @@
             navMenu.classList.toggle('active');
         });
     </script>
+
+<footer class="rodape2">
+        <div>
+            <p>© 2024 Raissa Cruz. Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 
 </html>

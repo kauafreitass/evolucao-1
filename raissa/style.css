@@ -45,7 +45,7 @@ body {
 }
 
 .nav-menu li a:hover {
-    color: #906effcb;
+    color: #e863ffcb;
 }
 
 .nav-toggle {
@@ -252,4 +252,13 @@ body {
     .evolution-container p {
         font-size: 12px; /* Fonte menor para telas muito pequenas */
     }
+}
+
+.rodape2 {
+    background-color: #e4b3fe;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
 }
