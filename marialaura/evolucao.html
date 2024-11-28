@@ -114,51 +114,115 @@
             text-align: center;
         }
     }
+
+    .evolution-container {
+        margin: 50px auto;
+        padding: 30px 20px;
+        max-width: 800px;
+        background-color: #ffffff;
+        /* Fundo branco */
+        border-radius: 15px;
+        /* Bordas arredondadas */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        /* Sombra suave */
+        text-align: center;
+        /* Centraliza o conteúdo */
+        position: relative;
+        /* Necessário para a mini imagem */
+    }
+
+    .evolution-container .mini-image {
+        width: 100px;
+        /* Tamanho pequeno para a imagem */
+        height: 100px;
+        border-radius: 50%;
+        /* Deixa a imagem circular */
+        object-fit: cover;
+        /* Ajusta a imagem para caber perfeitamente */
+        border: 4px solid #05632c;
+        /* Borda destacada */
+        background-color: white;
+        position: absolute;
+        top: -50px;
+        /* Move a imagem para cima do container */
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        /* Sombra na imagem */
+    }
+
+    .evolution-container h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 60px;
+        /* Espaço abaixo da imagem */
+        color: #333;
+    }
+
+    .evolution-container p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #555;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .evolution-container p:last-child {
+        margin-bottom: 0;
+    }
 </style>
 
 <body>
     <section class="section home" id="home">
         <ul class="nav-menu">
-            <li><a href="index.php">•Voltar para pagina incial</a></li>
-            <li><a href="evolucao.html">•Evolução Pessoal</a></li>
-            <li><a href="dificuldades.html">•dificuldades encontradas</a></li>
+            <li><a href="index.html">↻Voltar para pagina anterior</a></li>
         </ul>
-        <h2>Projeto evolução</h2>
-        <h2>HUMANAS</h2>
-        <p>"Não há nada mais verdadeiramente artístico do que amar as pessoas." – Vincent van Gogh</p>
+        <h2>Minha evolução</h2>
+
     </section>
 
-
-    <div class="container">
-        <div class="image">
-            <img src="img/projeto anterior.png" alt="Exemplo 1">
-        </div>
-        <div class="caption">
-            <h2>Primeiro Projeto</h2>
-            <p>Este código é um exemplo de página web desenvolvida em HTML, com o objetivo de apresentar um site
-                temático sobre Direito. Ele está dividido em diferentes seções, cada uma com uma função específica para
-                organizar e exibir o conteúdo,
-                proporcionando uma experiência visual e funcional para os visitantes. </p>
-        </div>
+    <div class="evolution-container">
+        <img src="img/praia2.jpg" alt="Imagem Evolução" class="mini-image">
+        <h2>Minha Jornada de Evolução</h2>
+        Quando olho pra minha evolução desde o começo, vejo o quanto cresci não só como desenvolvedora, mas também
+        como pessoa. No começo, o foco era bem básico: aprender o essencial sobre HTML e CSS e entender como fazer
+        um site simples. O primeiro site sobre psiquiatria foi um marco nesse processo, e apesar de estar longe de
+        ser perfeito, foi onde aprendi as bases e dei os primeiros passos na web.
+        <br>
+        <br>
+        Com o tempo, fui vendo onde eu poderia melhorar. No site sobre Tupac, por exemplo, consegui aplicar tudo o
+        que aprendi de forma mais criativa e funcional, criando algo mais dinâmico e visualmente interessante. Não
+        só consegui me aprofundar mais em design e estrutura, mas também vi que a prática é fundamental: quanto mais
+        eu tentava, mais eu entendia e me sentia segura para inovar.
+        <br>
+        <br>
+        E o que me deixa ainda mais empolgada é o fato de que, hoje em dia, eu também estou mexendo com PHP e banco
+        de dados. Isso abriu ainda mais possibilidades, permitindo criar sites mais interativos e dinâmicos, com
+        funcionalidades que antes eu nem imaginava que conseguiria implementar. A evolução técnica é clara, mas o
+        mais legal é que ela vem acompanhada de uma confiança maior na minha capacidade de resolver problemas e
+        criar soluções.
+        <br>
+        <br>
+        Cada projeto, cada site que eu crio, é uma oportunidade de aprender mais e melhorar. A sensação de ver meu
+        progresso, de perceber o quanto cresci desde o primeiro site até agora, é incrível. E o melhor é que sei que
+        ainda tenho muito a aprender, mas estou muito animada com o que vem pela frente!
+        </p>
     </div>
 
-    <div class="container reverse">
-        <div class="caption">
-            <h2>Projeto Atual</h2>
-            <p>
-                Este código HTML representa uma página web dedicada à atriz e cantora Zendaya. Ele está bem estruturado,
-                dividido em seções que destacam diferentes aspectos de sua vida e carreira, com uma combinação de texto,
-                imagens, links e vídeos.</p>
-        </div>
-        <div class="image">
-            <img src="img/projeto atual.PNG" alt="Exemplo 2">
-        </div>
+
+    </div>
+
+    </div>
     </div>
 
 
     <!-- Botão de Voltar ao Topo -->
     <button class="scroll-top">&#8593;</button>
-
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Projeto Evolução. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script>
         // JavaScript para o botão de voltar ao topo
         const scrollTopBtn = document.querySelector('.scroll-top');
@@ -183,12 +247,6 @@
             navMenu.classList.toggle('active');
         });
     </script>
-
-<footer class="rodape2">
-        <div>
-            <p>© 2024 Raissa Cruz. Todos os direitos reservados</p>
-        </div>
-    </footer>
 </body>
 
 </html>

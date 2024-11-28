@@ -1,59 +1,312 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membro 1 - Evolução</title>
+    <title>Legenda ao Lado</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    /* Estilização do botão de voltar ao topo */
+    .scroll-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #05632ccb;
+        /* Cor principal do seu site */
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    }
+
+    .scroll-top.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    .scroll-top:hover {
+        background-color: #05632c;
+        /* Cor ligeiramente mais escura para o hover */
+    }
+
+    /* Estilização do menu responsivo */
+    .nav-toggle {
+        display: none;
+        /* Esconde o botão no desktop */
+        background-color: #05632ccb;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu li {
+        margin-right: 15px;
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav-menu a:hover {
+        color: #05632ccb;
+    }
+
+    /* Estilos para dispositivos móveis */
+    @media (max-width: 768px) {
+        .nav-toggle {
+            display: block;
+            /* Mostra o botão de alternância no mobile */
+        }
+
+        .nav-menu {
+            display: none;
+            /* Esconde o menu inicialmente */
+            flex-direction: column;
+            background-color: white;
+            position: absolute;
+            top: 60px;
+            /* Alinha abaixo do cabeçalho */
+            right: 0;
+            left: 0;
+            padding: 20px;
+            border-top: 2px solid #05632ccb;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-menu.active {
+            display: flex;
+            /* Exibe o menu ao clicar no botão */
+        }
+
+        .nav-menu li {
+            margin-bottom: 15px;
+        }
+
+        .nav-menu a {
+            color: #333;
+            text-align: center;
+        }
+    }
+
+    .evolution-container {
+        margin: 50px auto;
+        padding: 30px 20px;
+        max-width: 800px;
+        background-color: #ffffff;
+        /* Fundo branco */
+        border-radius: 15px;
+        /* Bordas arredondadas */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        /* Sombra suave */
+        text-align: center;
+        /* Centraliza o conteúdo */
+        position: relative;
+        /* Necessário para a mini imagem */
+    }
+
+    .evolution-container .mini-image {
+        width: 100px;
+        /* Tamanho pequeno para a imagem */
+        height: 100px;
+        border-radius: 50%;
+        /* Deixa a imagem circular */
+        object-fit: cover;
+        /* Ajusta a imagem para caber perfeitamente */
+        border: 4px solid #05632c;
+        /* Borda destacada */
+        background-color: white;
+        position: absolute;
+        top: -50px;
+        /* Move a imagem para cima do container */
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        /* Sombra na imagem */
+    }
+
+    .evolution-container h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 60px;
+        /* Espaço abaixo da imagem */
+        color: #33a5a1;
+    }
+
+    .evolution-container p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #0a514b;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .evolution-container p:last-child {
+        margin-bottom: 0;
+    }
+</style>
+
 <body>
+
     <section class="section home" id="home">
-        <header class="header">
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="indexhtml.php">1</a></li>
-                    <li><a href="index.php">2</a></li>
-                    <li><a href="contato.php">3</a></li>
-                </ul>
-                <span class="nav-toggle">&#9776;</span>
-            </nav>
-        </header>
-    
-       
-        
-            <h2>Projeto evolução</h2>
-            <h2>HUMANAS</h2>
-            <p>"Até os momentos de silêncio carregam a força de uma obra inacabada."</p>
-        </section>
-    
+        <ul class="nav-menu">
+            <li><a href="indexhtml.php">•Voltar para pagina incial</a></li>
+            <li><a href="evolucao.html">•Evolução Pessoal</a></li>
+        </ul>
+        <h2>Projeto evolução</h2>
+        <h2>HUMANAS</h2>
+    </section>
 
-    <main>
-        <section class="intro">
-            <h2>Minha Evolução no Projeto</h2>
-            <p>Minha jornada técnica e criativa tem sido uma experiência incrível, onde aprendi a me expressar através de soluções técnicas e criativas.</p>
-            <img src="img/evolucao2.png" alt="Imagem do primeiro projeto">
-        </section>
 
-        <section class="projeto-inicial">
-            <h3>Primeiro Projeto</h3>
-            <p>Na primeira semana de tecnologia, meu primeiro projeto envolveu criar uma página estática utilizando HTML e CSS. Era simples, mas serviu como base para aprender os conceitos fundamentais.</p>
-            <p><strong>Dificuldades Encontradas:</strong> O maior desafio foi garantir que os elementos se alinhassem corretamente e o site fosse responsivo.</p>
-            <img src="img/imagemreferencia.png" alt="Primeiro projeto">
-        </section>
+    <div class="container">
+        <div class="image">
+            <img src="img/imagemreferencia.png" alt="Exemplo 1">
+        </div>
+        <div class="caption">
+            <h2>Primeiro Projeto</h2>
+            <p>Esse é um site que fiz para falar sobre psiquiatria, uma área super importante e que tem ganhado ainda
+                mais destaque nos últimos tempos, especialmente depois da pandemia. Foi um projeto muito legal de fazer,
+                mas também teve algumas dificuldades no processo.
+                <br>
+                Primeiro, organizar o conteúdo foi um desafio, porque queria que tudo ficasse bem claro e fácil de
+                navegar, mas ao mesmo tempo interessante pra quem está acessando. Além disso, estilizar o site só com
+                HTML e CSS foi meio complicado, porque senti que faltou aquele toque mais dinâmico que deixaria tudo
+                mais moderno e interativo.
+                <br>
+                Outra coisa que deu trabalho foi pensar na responsividade, ou seja, fazer o site ficar bom tanto no
+                computador quanto no celular. Acho que ficou funcional, mas sei que dá pra melhorar bastante.
+                <br>
+                No geral, acho que ficou um projeto bem bacana pra quem quer saber mais sobre psiquiatria, mas sempre dá
+                pra lapidar e deixar ainda melhor!
+            </p>
+        </div>
+    </div>
 
-        <section class="projeto-atual">
-            <h3>Projeto Atual</h3>
-            <p>Agora, estou trabalhando com PHP para criar páginas dinâmicas e interativas, o que representa um grande avanço técnico. A criação de uma estrutura de navegação mais complexa foi um desafio empolgante.</p>
-            <p><strong>Dificuldades Encontradas:</strong> Lidar com PHP para tornar a navegação dinâmica e garantir que as interações funcionassem de maneira fluída foi um grande obstáculo.</p>
-            <img src="../assets/img/projeto-atual.jpg" alt="Projeto atual">
-        </section>
+    <div class="container reverse">
+        <div class="caption">
+            <h2>Projeto Atual/Evolução</h2>
+            <p>Comparar o site inicial sobre psiquiatria com o site mais recente mostra o quanto evoluiu no
+                desenvolvimento web em poucos meses. A diferença não é só na parte técnica, mas também na forma como
+                consegui aplicar mais criatividade e organização ao design e ao conteúdo.
+                <br>
+                No primeiro site, sobre psiquiatria, o foco estava em organizar informações relevantes e criar algo
+                funcional. Eu uso HTML e CSS básicos para montar o layout, mas sinto que a estilização ficou mais
+                simples e limitada. Apesar de os núcleos e a estrutura básica funcionarem, o design não tinha muitos
+                detalhes visuais ou de interatividade. Além disso, a responsabilidade ainda era uma questão a ser
+                melhorada.
+                <br>
+                Já no novo site, sobre Tupac Shakur, consegui trazer mais elementos visuais, como imagens, indicações em
+                destaque e até botões com estilo. O layout ficou muito mais sonoro e atrativo, com peças bem divididas e
+                organizadas. As cores e fontes também foram melhor trabalhadas, criando um impacto maior para o usuário.
+                Além disso, comecei a incluir elementos como cartões e listas bem estilizadas, o que ajudou a apresentar
+                as informações de maneira mais clara e interessante.
+                <br>
+                Outro ponto de evolução foi na usabilidade. O site mais recente tem navegação mais fluida e intuitiva,
+                com botões de chamada para ação e links diretos entre páginas.Consegui criar
+                algo mais dinâmico e moderno, explorando melhor os recursos do CSS.
+                <br>
+                Essa evolução mostra como a prática e o aprendizado contínuo fizeram diferença. O primeiro site foi
+                essencial para construir uma base e entender o que poderia ser melhorado. O segundo site reflete não
+                apenas o avanço técnico, mas também a confiança em aplicar ideias mais ousadas no design. Ainda há
+                espaço para melhorar, mas ver essa evolução em tão pouco tempo é muito motivador! .
+            </p>
+        </div>
+        <div class="image">
+            <img src="img/evolucao3.png" alt="Exemplo 2">
+        </div>
+    </div>
 
-        <section class="comparacao-projetos">
-            <h3>Comparação entre o Primeiro Projeto e o Atual</h3>
-            <p><strong>Progresso Técnico:</strong> Antes, apenas sabia como estilizar páginas estáticas. Agora, estou criando páginas dinâmicas e interativas com PHP.</p>
-            <p><strong>Progresso Criativo:</strong> O design evoluiu para um layout mais sofisticado, utilizando uma paleta de cores vintage e uma navegação mais fluida.</p>
-        </section>
-    </main>
+    <div class="evolution-container">
+        <img src="img/praia3.jpg" alt="Imagem Evolução" class="mini-image">
+        <h2>Dificuldades Encontradas</h2>
+        <p>
+            Ao longo dessa jornada, enfrentei várias dificuldades, mas cada uma delas acabou me ajudando a aprender e a
+            evoluir. No começo, o desafio era entender o básico de HTML e CSS e, principalmente, como aplicar isso na
+            prática. Criar um layout que fosse funcional e visualmente atrativo foi algo que exigiu muita tentativa e
+            erro. No site sobre psiquiatria, por exemplo, tive dificuldade em organizar o conteúdo de forma clara e
+            deixá-lo interessante ao mesmo tempo.<br>
+            <br>
+            Outra questão foi a estilização. No início, parecia complicado criar designs mais sofisticados apenas com
+            CSS, então acabava optando por algo mais simples. Mesmo assim, percebi que a falta de interatividade era um
+            ponto fraco e algo que precisava melhorar. Além disso, a responsividade foi uma das maiores barreiras. Fazer
+            o site funcionar bem em diferentes tamanhos de tela não foi fácil, e às vezes o layout parecia desorganizado
+            em dispositivos móveis.
+            <br>
+            <br>
+            Agora que estou trabalhando com PHP e bancos de dados, surgiram novos desafios. Entender como integrar o
+            back-end ao front-end e como estruturar e manipular os dados no banco foi algo completamente novo pra mim.
+            Além disso, criar um sistema dinâmico que funcione sem erros exige bastante atenção e paciência,
+            especialmente quando se trata de resolver problemas que não são tão visíveis à primeira vista.
+            <br>
+            <br>
+            Apesar dessas dificuldades, cada obstáculo foi uma oportunidade de aprender algo novo. Eu tive que
+            pesquisar, testar e, muitas vezes, recomeçar do zero, mas tudo isso me trouxe mais experiência e confiança.
+            Percebo que, embora os desafios sejam inevitáveis, eles fazem parte do processo de crescimento e me ajudam a
+            ficar cada vez melhor no que faço.
+        </p>
+
+    </div>
+
+    <!-- Botão de Voltar ao Topo -->
+    <button class="scroll-top">&#8593;</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Projeto Evolução. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para o botão de voltar ao topo
+        const scrollTopBtn = document.querySelector('.scroll-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // JavaScript para o menu responsivo
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle?.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
+
 </html>
