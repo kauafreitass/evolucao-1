@@ -120,20 +120,18 @@ body {
     text-shadow: 0 0 5px #ffffff94, 0 0 10px #ffffff94, 0 0 15px #ffffff94, 0 0 20px #ffffff94;
 }
 
-.section.home li{
-    font-size: 22px;
-    color: #f3f3f3;
-    max-width: 800px;
-    margin: 20px auto 0;
-    text-shadow: 0 0 5px #ffffff94, 0 0 10px #ffffff94, 0 0 15px #ffffff94, 0 0 20px #ffffff94;
+.brilho {
+    color: white; /* Cor branca */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff; /* Efeito de brilho */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    text-decoration: none; /* Remove o sublinhado */
 }
 
-.section.home a{
-    font-size: 22px;
-    color: #f3f3f3;
-    max-width: 800px;
-    margin: 20px auto 0;
-    text-shadow: 0 0 5px #ffffff94, 0 0 10px #ffffff94, 0 0 15px #ffffff94, 0 0 20px #ffffff94;
+.brilho:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff; /* Aumenta o brilho no hover */
+    color: #ff00ff; /* Troca a cor do texto no hover */
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out; /* Transição suave */
 }
 
 /* Responsivo para menu */
