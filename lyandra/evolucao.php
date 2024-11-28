@@ -122,6 +122,7 @@
         <h2>Projeto evolução</h2>
         <h2>☸ HUMANAS ☸</h2>
         <p>"Até os momentos de silêncio carregam a força de uma obra inacabada."</p>
+        <li><a href="../index.php">Voltar para pagina incial</a></li>
     </section>
 
 

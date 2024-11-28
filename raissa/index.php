@@ -119,7 +119,7 @@
 <body>
     <section class="section home" id="home">
         <ul class="nav-menu">
-            <li><a href="index.php">•Voltar para pagina incial</a></li>
+            <li><a href="../index.php">•Voltar para pagina incial</a></li>
             <li><a href="evolucao.html">•Evolução Pessoal</a></li>
             <li><a href="dificuldades.html">•dificuldades encontradas</a></li>
         </ul>

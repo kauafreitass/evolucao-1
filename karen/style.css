@@ -121,6 +121,36 @@ body {
     text-shadow: 0 0 5px #ffffff94, 0 0 10px #ffffff94, 0 0 15px #ffffff94, 0 0 20px #ffffff94;
 }
 
+.back-button {
+    margin-left: 810px;
+    display: inline-block;
+    color: #1d3557; 
+    color: #4c4c4c; 
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    color: #89c7c2; /* Cor dourada ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de elevação para interação */
+}
+
+.back-button:focus {
+    outline: none; /* Remove o contorno de foco padrão */
+    box-shadow: 0 0 0 2px  #89c7c2; /* Adiciona uma borda dourada quando o link está em foco */
+}
+
+.back-button:active {
+    transform: translateY(0); /* Retorna a posição original ao clicar */
+    background-color:  #89c7c2; /* Tom dourado mais escuro durante o clique */
+}
+
+
 /* Responsivo para menu */
 @media (max-width: 768px) {
     .nav-menu {

@@ -122,6 +122,8 @@
         <h2>Projeto evolução</h2>
         <h2>☸ HUMANAS ☸</h2>
         <p>"Até os momentos de silêncio carregam a força de uma obra inacabada."</p>
+        <br>
+        
     </section>
 <br><br><br>
 
@@ -175,6 +177,10 @@
         </p>
     </div>
 
+    
+      <li><a href="../index.php" class="back-button">voltar para página inicial</a></li>
+
+<br>
     <footer class="vangogh-footer-3">
         <div class="footer-content">
             <h2>Karen Beatriz Rodrigues Santana</h2>
